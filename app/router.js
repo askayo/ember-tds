@@ -12,6 +12,9 @@ Router.map(function() {
     this.route('edit',{path:'edit/:developer_id'});
     this.route('confirmdelete', {path: 'confirmdelete/:developer_id'});
   });
+  this.route('projects', function() {
+    this.route('new');
+  });
 });
 
 export default Router;

@@ -12,7 +12,10 @@ actions:{
 		dev=this.store.createRecord('developer',dev);
 		dev.save().then(this.transitionTo('developers'));
 
-		}
+	},
+	cancel(){
+		this.transitionTo("developers");
+	}
 
 }
 
